@@ -1,0 +1,365 @@
+body {
+  box-sizing: border-box;
+}
+
+#nav {
+  background-color: #E9AD00;
+  padding: 0 8%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+#searchbox::placeholder {
+  color: #fff;
+}
+
+#searchbox {
+  background-color: #FCC302;
+  outline: none;
+  border: none;
+  color: #fff !important;
+  position: relative; /*cuz we want to shift the searchbar closer to search button*/
+  /*searchbutton went under searchbar as searchbar moved relative to searchbutton (ie:searchbutton is static only searchbar moves) hence we have to use z-index*/
+  left: 47px;
+  box-shadow: 5px 10px 11px 0px #00000021;
+  width: 250px;
+}
+
+
+#searchbtn {
+  position: relative;
+  z-index: 99;
+  background-color: #00BEC9;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*to align the search bar during inspect*/
+/*iPad*/
+@media only screen and (max-width: 768px) {
+  #search_container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    right:30px;
+  }
+} 
+/*to make logo and hamburger icon same row*/
+/*iPhone*/
+@media only screen and (max-width: 500px) {
+ #nav {
+  padding: 0;
+ }
+} 
+
+/* ---------- Hero Section -------*/
+
+#hero {
+  /* height: 90vh; */
+  background-color: #FCC302;
+  padding-bottom: 145px; /*40px*/
+  padding-top: 50px;
+}
+
+#hero-text h1 {
+  color: #fff;
+  font-size: 70px; /*50px*/
+  margin-top: 100px;/* padding-top: 20px; */
+}
+
+#hero-text p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#hero-btn1 {
+  background-color: #00BEC9;
+  border: 2px solid #00BEC9 ;
+  color: #fff;
+  font-weight: 500;
+}
+
+#hero-btn1:hover {
+  background-color: #06e2ee;
+  border: 2px solid #06e2ee ;
+}
+
+#hero-btn2 {
+  border: 2px solid white;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+#hero-btn2:hover {
+  color: #000;
+  border: 2px solid #000;
+
+}
+
+@media only screen and (max-width: 1400px) {
+  #hero-text h1 {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #hero-text h1 {
+    font-size: 50px;
+    margin-top: 75px;
+  }
+  #hero-text p {
+    font-size: 18px;
+  } 
+  #hero {
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+  #hero-img img {
+    padding-top: 50px;
+  }
+}
+
+/*check ipad,ipad pro -(976-765)*/
+@media only screen and (max-width:940px) {
+  #hero-text h1 {
+    font-size: 40px;
+  }
+  #hero-img img {
+    padding-top: 83px;
+  }
+}
+
+/* ---------- Services Section -------*/
+
+#services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#service-text {
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+
+#service-img {
+  padding: 4%;
+}
+
+#service-text h1 {
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+#service-text p {
+  padding-top: 15px;
+  font-size: 20px;
+} 
+
+#service-btn {
+  /* border: 2px solid #00BEC9 ; */
+  background-color: #00BEC9;
+  color: #fff;
+  font-weight: 500;
+}
+
+/*iPad pro*/
+@media only screen and (max-width:1200px) {
+  #service-text h1 {
+    font-size: 40px;
+    padding-top: 11px;
+  }
+  #service-img {
+    margin-top: 20px; 
+  }
+}
+
+/*ipad*/
+@media only screen and (max-width:900px) {
+  #service-img {
+    padding-top: 8%;
+  }
+}
+
+/* ---------- Counter Section -------*/
+#counter-section {
+  /* background-color: #f9d047; */
+  background-image: linear-gradient(to right,#FCC302,rgb(235, 230, 230));
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.counter-icon {
+  font-size:  70px;
+}
+
+.counter-icon:hover {
+  color: #00BEC9;
+  transform: rotate('180deg');
+
+}
+
+@media only screen and (max-width:500px) {
+  .counter-icon {
+    font-size:  50px;
+  }
+}
+
+/* ---------- Blog Section -------*/
+#blog {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#blog-title {
+  font-size: 50px;
+}
+
+#blog-info {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.blog-article {
+  padding: 15px;
+  box-shadow: 17px 20px 37px -11px rgb(233 233 233 / 83%);
+  /* box-shadow: 17px 20px 37px -11px rgba(191,178,191,0.83); */
+}
+
+.blog-article .article-title {
+  font-weight: 500;
+}
+
+.blog-article .article-date {
+  color: #00BEC9;
+}
+
+.blog-article .article-desc span {
+  font-weight: 500;
+}
+
+.blog-article .article-link {
+  position: relative;
+  color: #E9AD00;
+  font-weight: 400; 
+}
+
+.blog-article .article-link:hover {
+  color: #c89701;
+}
+
+/* ---------- Footer Section -------*/
+#footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #3b3b3b;
+  color: #C5C5C5;
+}
+
+#footer li {
+  list-style: none;   
+}
+
+#footer ul {
+  padding-left: 0;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #C5C5C5;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+#footer h4 {
+  text-transform: uppercase;
+}
+
+#title-text {
+  font-size: 11px;
+  line-height: 0px;
+}
+
+#footer-form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#footer-searchbox {
+  position: relative;
+  background-color: #06e2ee;  
+  border: none;
+  padding: 5px;
+  width: 100%;
+  max-width: 250px;
+  left: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#footer-searchbox::placeholder {
+  color: #fff;
+  font-weight: 500;
+}
+
+#footer-searchbtn {
+  background-color: #FCC302;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;  
+}
+
+.social-icon {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width:975px) {
+  #footer-searchbox {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width:823px) {
+  #footer-searchbox {
+    max-width: 180px;
+  }
+}
+
+@media only screen and (max-width:576px) {
+  #footer-searchbox {
+    max-width: 200px;
+  }
+  #footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #footer h4 {
+    padding-top: 50px;
+  }
+}
+
+
+
+
+
+
+
+
